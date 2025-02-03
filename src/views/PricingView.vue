@@ -17,7 +17,7 @@
                         <div><i class="fa-solid fa-circle-check"></i> Levels</div>
                         <div><i class="fa-solid fa-circle-check"></i> Calling Cards / Emblems</div>
                     </div>
-                    <button onclick="window.open('https://discord.gg/f7dZ52gDzG', '_blank')">
+                    <button onclick="window.open('https://discord.gg/teentitans', '_blank')">
                         Purchase
                     </button>
                 </div>
@@ -32,7 +32,7 @@
                         <div><i class="fa-solid fa-circle-check"></i> Levels</div>
                         <div><i class="fa-solid fa-circle-check"></i> Calling Cards / Emblems</div>
                     </div>
-                    <button onclick="window.open('https://discord.gg/f7dZ52gDzG', '_blank')">
+                    <button onclick="window.open('https://discord.gg/teentitans', '_blank')">
                         Purchase
                     </button>
                 </div>
@@ -47,7 +47,7 @@
                         <div><i class="fa-solid fa-circle-check"></i> Levels</div>
                         <div><i class="fa-solid fa-circle-check"></i> Calling Cards / Emblems</div>
                     </div>
-                    <button onclick="window.open('https://discord.gg/f7dZ52gDzG', '_blank')">
+                    <button onclick="window.open('https://discord.gg/teentitans', '_blank')">
                         Purchase
                     </button>
                 </div>
@@ -62,7 +62,7 @@
                         <div><i class="fa-solid fa-circle-check"></i> Levels</div>
                         <div><i class="fa-solid fa-circle-check"></i> Calling Cards / Emblems</div>
                     </div>
-                    <button onclick="window.open('https://discord.gg/f7dZ52gDzG', '_blank')">
+                    <button onclick="window.open('https://discord.gg/teentitans', '_blank')">
                         Purchase
                     </button>
                 </div>
@@ -77,7 +77,7 @@
                         <div><i class="fa-solid fa-circle-check"></i> Levels</div>
                         <div><i class="fa-solid fa-circle-check"></i> Calling Cards / Emblems</div>
                     </div>
-                    <button onclick="window.open('https://discord.gg/f7dZ52gDzG', '_blank')">
+                    <button onclick="window.open('https://discord.gg/teentitans', '_blank')">
                         Purchase
                     </button>
                 </div>
@@ -99,7 +99,7 @@
                         <div><i class="fa-solid fa-circle-check"></i> Fast Responses & Updates</div>
                         <div><i class="fa-solid fa-circle-check"></i> VIP Role in our discord</div>
                     </div>
-                    <button onclick="window.open('https://discord.gg/f7dZ52gDzG', '_blank')">
+                    <button onclick="window.open('https://discord.gg/teentitans', '_blank')">
                         Purchase
                     </button>
                 </div>
@@ -114,7 +114,7 @@
                         <div><i class="fa-solid fa-circle-check"></i> Fast Responses & Updates</div>
                         <div><i class="fa-solid fa-circle-check"></i> VIP Role in our discord</div>
                     </div>
-                    <button onclick="window.open('https://discord.gg/f7dZ52gDzG', '_blank')">
+                    <button onclick="window.open('https://discord.gg/teentitans', '_blank')">
                         Purchase
                     </button>
                 </div>
@@ -129,7 +129,7 @@
                         <div><i class="fa-solid fa-circle-check"></i> Fast Responses & Updates</div>
                         <div><i class="fa-solid fa-circle-check"></i> VIP Role in our discord</div>
                     </div>
-                    <button onclick="window.open('https://discord.gg/f7dZ52gDzG', '_blank')">
+                    <button onclick="window.open('https://discord.gg/teentitans', '_blank')">
                         Purchase
                     </button>
                 </div>
@@ -156,7 +156,7 @@
                             <i class="fa-solid fa-circle-check"></i> Customer role in our discord
                         </div>
                     </div>
-                    <button onclick="window.open('https://discord.gg/f7dZ52gDzG', '_blank')">
+                    <button onclick="window.open('https://discord.gg/teentitans', '_blank')">
                         Purchase
                     </button>
                 </div>
@@ -176,7 +176,7 @@
                             <i class="fa-solid fa-circle-check"></i> Customer role in our discord
                         </div>
                     </div>
-                    <button onclick="window.open('https://discord.gg/f7dZ52gDzG', '_blank')">
+                    <button onclick="window.open('https://discord.gg/teentitans', '_blank')">
                         Purchase
                     </button>
                 </div>
@@ -196,7 +196,7 @@
                             <i class="fa-solid fa-circle-check"></i> Customer role in our discord
                         </div>
                     </div>
-                    <button onclick="window.open('https://discord.gg/f7dZ52gDzG', '_blank')">
+                    <button onclick="window.open('https://discord.gg/teentitans', '_blank')">
                         Purchase
                     </button>
                 </div>
@@ -216,7 +216,7 @@
                             <i class="fa-solid fa-circle-check"></i> Customer role in our discord
                         </div>
                     </div>
-                    <button onclick="window.open('https://discord.gg/f7dZ52gDzG', '_blank')">
+                    <button onclick="window.open('https://discord.gg/teentitans', '_blank')">
                         Purchase
                     </button>
                 </div>

@@ -5,7 +5,8 @@ import FAQ from '@/components/FAQ.vue'
 <template>
     <div class="container">
         <h1>Need Support?</h1>
-        <span>Our main contact method is via Discord!</span>
+        <span>Our main contact method is via Discord! If you do not have discord and would like to buy email us at titanservicescod@gmail.com
+</span>
         <button onclick="window.open('https://discord.gg/teentitans', '_blank')">
             <i class="fa-brands fa-discord"></i> Join Discord
         </button>

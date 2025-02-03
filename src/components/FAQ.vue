@@ -4,11 +4,11 @@ import { ref } from 'vue'
 const faqs = ref([
     {
         question: 'What services do you offer?',
-        answer: 'We offer a variety of Call of Duty-related services, including boosting, coaching, and custom mods.',
+        answer: 'We offer a variety of Call of Duty-related services, including account boosting, bot lobbies & more',
     },
     {
         question: 'How do I get started?',
-        answer: 'Simply browse our available services on the website and select the one that best fits your needs. You can then proceed with the order.',
+        answer: 'Simply browse our available services on the website and select the one that best fits your needs. You can then proceed with the order via discord.',
     },
     {
         question: 'What is your pricing?',

@@ -6,19 +6,19 @@ const testimonials = [
         name: 'Cartel',
         jobTitle: 'Discord Customer',
         message:
-            'absolutely phenomenal service. Do NOT hesitate to buy each lobby i did (16 straight) were 200+ kills some in the 400’s. They make sure yall get kills so you can complete your camos.',
+            'Absolutely phenomenal service. Do NOT hesitate to buy each lobby i did (16 straight) were 200+ kills some in the 400’s. They make sure yall get kills so you can complete your camos.',
     },
     {
-        name: 'Jane Smith',
-        jobTitle: 'Competitive Gamer',
+        name: 'AussieFitness',
+        jobTitle: 'Content Creator & Discord Customer',
         message:
-            "I've been using Titan Services for months now and I couldn't be happier. They're professional, fast, and reliable.",
+            "10/10 service, i’ve bought tonnes from other people but Titans are hands down the best value. Easy 400 - 600 kill games, insane XP & cool asf dude to deal with.",
     },
     {
-        name: 'David Green',
-        jobTitle: 'Streamer & YouTuber',
+        name: 'YL',
+        jobTitle: 'Discord Customer',
         message:
-            "Best customer support I've ever received. Titan Services always goes the extra mile to make sure I'm satisfied.",
+            "10/10 service, I’ve had nothing but the best experience with this with Titan! I lvled up so much doing this process, high level kills each time, skins and all. I’ll be back for sure! Would recommend highly!.",
     },
 ]
 </script>
@@ -44,15 +44,15 @@ const testimonials = [
             <div class="point">
                 <h3><i class="fa-solid fa-face-smile"></i> Customer Satisfaction</h3>
                 <p>
-                    Our clients' satisfaction is our top priority, and we always go the extra mile
+                    Our client's satisfaction is our top priority, and we always go the extra mile
                     to meet your needs.
                 </p>
             </div>
             <div class="point">
                 <h3><i class="fa-solid fa-hand-holding-dollar"></i> Competitive Pricing</h3>
                 <p>
-                    We offer the best services at competitive rates, giving you maximum value for
-                    your investment.
+                    We offer the best services at affordable rates, giving you maximum value for
+                    your call of duty needs.
                 </p>
             </div>
         </div>
