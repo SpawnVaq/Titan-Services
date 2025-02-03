@@ -3,10 +3,10 @@ import FAQ from '@/components/FAQ.vue'
 
 const testimonials = [
     {
-        name: 'John Doe',
-        jobTitle: 'Gamer & Content Creator',
+        name: 'Cartel',
+        jobTitle: 'Discord Customer',
         message:
-            'Titan Services helped me level up my Call of Duty experience. Their services are top-notch and the team is amazing!',
+            'absolutely phenomenal service. Do NOT hesitate to buy each lobby i did (16 straight) were 200+ kills some in the 400’s. They make sure yall get kills so you can complete your camos.',
     },
     {
         name: 'Jane Smith',
