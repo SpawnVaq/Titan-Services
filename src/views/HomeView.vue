@@ -24,7 +24,7 @@ import { RouterLink } from 'vue-router'
                 </div>
                 <div class="example-card">
                     <img src="/MESKBO6.png" alt="ME Skin" />
-                    <h3>Monster Energy Bundle</h3>
+                    <h3>ME Bundle</h3>
                     <span>$25.00</span>
                 </div>
             </div>
