@@ -10,8 +10,7 @@ import { RouterLink } from 'vue-router'
         <div class="content">
             <h1>Where <span>Call of Duty</span> <br />Mastery Begins</h1>
             <p>
-                Titan Services offers top-tier coaching, boosting, and resources to elevate your
-                Call Of Duty and keep you ahead in the game.
+                Titan Services offers account boosting for Call of duty black ops 6 such as dark matter grind & prestige master grind, we also offer cheap bot lobbies & More! check out pricing to see everything we sell
             </p>
 
             <RouterLink to="/pricing" class="button"> View Services </RouterLink>
