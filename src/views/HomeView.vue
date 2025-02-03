@@ -20,12 +20,12 @@ import { RouterLink } from 'vue-router'
                 <div class="example-card">
                     <img src="/2x-xp-boost.png" alt="2XP Boost" />
                     <h3>10 Hours 2XP</h3>
-                    <span>$5.99</span>
+                    <span>$6.00</span>
                 </div>
                 <div class="example-card">
-                    <img src="/2x-xp-boost.png" alt="2XP Boost" />
-                    <h3>10 Hours 2XP</h3>
-                    <span>$5.99</span>
+                    <img src="/MESKBO6.png" alt="ME Skin" />
+                    <h3>Monster Energy Bundle</h3>
+                    <span>$25.00</span>
                 </div>
             </div>
         </div>
