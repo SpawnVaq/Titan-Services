@@ -202,13 +202,12 @@
                 </div>
                 <div class="card">
                     <div class="tag">Basic</div>
-                    <h3 class="price">$5 <span class="price2">One Time</span></h3>
-                    <p>5 Codes (Redeemable once per day.)</p>
+                    <h3 class="price">$6 <span class="price2">One Time</span></h3>
+                    <p>2XP Codes 10 HOURS </p>
                     <div class="divider"></div>
                     <div class="info">
                         <div>
-                            <i class="fa-solid fa-circle-check"></i> Unlock exclusive rewards in
-                            game
+                            <i class="fa-solid fa-circle-check"></i> Unlock 10 HOURS OF DOUBLE XP
                         </div>
                         <div><i class="fa-solid fa-circle-check"></i> Quick Delivery Time</div>
                         <div><i class="fa-solid fa-circle-check"></i> Fast Responses & Updates</div>
