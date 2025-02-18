@@ -42,7 +42,7 @@ const categories = [
                 sale:"$150",
                 priceDetail: "One Time",
                 description: "Unlimited Bot Lobbies",
-                features: ["Camos", "Weapon XP", "Levels", "Calling Cards / Emblems"],
+                features: ["Camos", "Weapon XP", "On Sale!", "Levels", "Calling Cards / Emblems"],
                 link: "https://discord.gg/teentitans",
             },
         ],
@@ -59,6 +59,7 @@ const categories = [
                 features: [
                     "Dark Matter on every gun",
                     "Quick Delivery Time",
+                    "On Sale!",
                     "Fast Responses & Updates",
                     "VIP Role in our discord",
                 ],
@@ -73,6 +74,7 @@ const categories = [
                 features: [
                     "Dark Matter on every gun",
                     "Quick Delivery Time",
+                    "On Sale!",
                     "Fast Responses & Updates",
                     "VIP Role in our discord",
                 ],
@@ -88,6 +90,7 @@ const categories = [
                     "Dark Matter on every gun",
                     "Prestige Master",
                     "All of our bundles",
+                    "On Sale!",
                     "100 Hours Of 2XP Codes",
                     "VIP Role in our discord"
                 ],
@@ -102,6 +105,7 @@ const categories = [
                 features: [
                     "Dark Matter on every gun",
                     "Quick Delivery Time",
+                    "On Sale!",
                     "Fast Responses & Updates",
                     "VIP Role in our discord",
                 ],
