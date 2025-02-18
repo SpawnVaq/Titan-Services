@@ -1,223 +1,213 @@
-<script setup></script>
+<script setup>
+const categories = [
+    {
+        title: "Bot Lobbies",
+        items: [
+            {
+                tag: "Basic",
+                price: "$4",
+                priceDetail: "One Time",
+                description: "1 Nuketown 24/7 Bot Lobby",
+                features: ["Camos", "Weapon XP", "Levels", "Calling Cards / Emblems"],
+                link: "https://discord.gg/teentitans",
+            },
+            {
+                tag: "Ultra",
+                price: "$2.50",
+                priceDetail: "Each for 5+ Lobbies",
+                description: "5+ Nuketown 24/7 Bot Lobbies",
+                features: ["Camos", "Weapon XP", "Levels", "Calling Cards / Emblems"],
+                link: "https://discord.gg/teentitans",
+            },
+            {
+                tag: "Basic",
+                price: "$5",
+                priceDetail: "One Time",
+                description: "1 Hardcore Domination Bot Lobby",
+                features: ["Camos", "Weapon XP", "Levels", "Calling Cards / Emblems"],
+                link: "https://discord.gg/teentitans",
+            },
+            {
+                tag: "Ultra",
+                price: "$25",
+                sale: "$15",
+                priceDetail: "5 Domination Lobbies ",
+                description: "5 Domination Lobbies",
+                features: ["Camos", "Weapon XP", "On Sale!", "Levels", "Calling Cards / Emblems"],
+                link: "https://discord.gg/teentitans",
+            },
+            {
+                tag: "VIP",
+                price: "$250",
+                sale:"$150",
+                priceDetail: "One Time",
+                description: "Unlimited Bot Lobbies",
+                features: ["Camos", "Weapon XP", "Levels", "Calling Cards / Emblems"],
+                link: "https://discord.gg/teentitans",
+            },
+        ],
+    },
+    {
+        title: "Dark Matter & Prestige Master",
+        items: [
+            {
+                tag: "VIP",
+                price: "$125",
+                sale: "$95",
+                priceDetail: "One Time",
+                description: "Unlock Dark Matter",
+                features: [
+                    "Dark Matter on every gun",
+                    "Quick Delivery Time",
+                    "Fast Responses & Updates",
+                    "VIP Role in our discord",
+                ],
+                link: "https://discord.gg/teentitans",
+            },
+            {
+                tag: "VIP",
+                price: "$150",
+                sale:"$90",
+                priceDetail: "One Time",
+                description: "Hit Prestige Master",
+                features: [
+                    "Dark Matter on every gun",
+                    "Quick Delivery Time",
+                    "Fast Responses & Updates",
+                    "VIP Role in our discord",
+                ],
+                link: "https://discord.gg/teentitans",
+            },
+            {
+                tag: "ULTIMATE",
+                price: "$285",
+                sale:"$180",
+                priceDetail: "One Time",
+                description: "Hit Prestige Master",
+                features: [
+                    "Dark Matter on every gun",
+                    "Prestige Master",
+                    "All of our bundles",
+                    "100 Hours Of 2XP Codes",
+                    "VIP Role in our discord"
+                ],
+                link: "https://discord.gg/teentitans",
+            },
+            {
+                tag: "VIP",
+                price: "$300+",
+                sale: "$130",
+                priceDetail: "One Time",
+                description: "Hit Prestige Master & Unlock Dark Matter",
+                features: [
+                    "Dark Matter on every gun",
+                    "Quick Delivery Time",
+                    "Fast Responses & Updates",
+                    "VIP Role in our discord",
+                ],
+                link: "https://discord.gg/teentitans",
+            },
+        ],
+    },
+    {
+        title: "In-game Bundles & 2XP Codes",
+        items: [
+            {
+                tag: "Basic",
+                price: "$5",
+                priceDetail: "One Time",
+                description: "Little Caesars: 5 Codes (1 code per day)",
+                features: [
+                    "Unlock exclusive rewards in game",
+                    "Quick Delivery Time",
+                    "Fast Responses & Updates",
+                    "Customer role in our discord",
+                ],
+                link: "https://discord.gg/teentitans",
+            },
+            {
+                tag: "Basic",
+                price: "$25",
+                priceDetail: "One Time",
+                description: "Monster Energy Bundle",
+                features: [
+                    "Unlock exclusive rewards in game",
+                    "Quick Delivery Time",
+                    "Fast Responses & Updates",
+                    "Customer role in our discord",
+                ],
+                link: "https://discord.gg/teentitans",
+            },
+            {
+                tag: "Basic",
+                price: "$15",
+                priceDetail: "One Time",
+                description: "Tokyo Game Show 2024 Bundle",
+                features: [
+                    "Unlock exclusive rewards in game",
+                    "Quick Delivery Time",
+                    "Fast Responses & Updates",
+                    "Customer role in our discord",
+                ],
+                link: "https://discord.gg/teentitans",
+            },
+            {
+                tag: "Basic",
+                price: "$5",
+                priceDetail: "One Time",
+                description: "5 Codes (Redeemable once per day.)",
+                features: [
+                    "Unlock exclusive rewards in game",
+                    "Quick Delivery Time",
+                    "Fast Responses & Updates",
+                    "Customer role in our discord",
+                ],
+                link: "https://discord.gg/teentitans",
+            },
+        ],
+    },
+];
+
+const getDiscountedPrice = (item) => {
+    if (item.sale && item.discount) {
+        return (item.price * (1 - item.discount / 100)).toFixed(2);
+    }
+    return item.price;
+};
+
+const formatPrice = (price) => {
+    return `${price}`;
+};
+</script>
 
 <template>
     <div class="container">
-        <div class="item">
-            <h1>Bot Lobbies</h1>
+        <div v-for="category in categories" :key="category.title" class="item">
+            <h1>{{ category.title }}</h1>
             <div class="divider"></div>
             <div class="cards">
-                <div class="card">
-                    <div class="tag">Basic</div>
-                    <h3 class="price">$4 <span class="price2">One Time</span></h3>
-                    <p>1 Nuketown 24/7 Bot Lobby</p>
-                    <div class="divider"></div>
-                    <div class="info">
-                        <div><i class="fa-solid fa-circle-check"></i> Camos</div>
-                        <div><i class="fa-solid fa-circle-check"></i> Weapon XP</div>
-                        <div><i class="fa-solid fa-circle-check"></i> Levels</div>
-                        <div><i class="fa-solid fa-circle-check"></i> Calling Cards / Emblems</div>
-                    </div>
-                    <button onclick="window.open('https://discord.gg/teentitans', '_blank')">
-                        Purchase
-                    </button>
-                </div>
-                <div class="card">
-                    <div class="tag">Ultra</div>
-                    <h3 class="price">$2.50 <span class="price2">Each for 5+ Lobbies</span></h3>
-                    <p>5+ Nuketown 24/7 Bot Lobbies</p>
-                    <div class="divider"></div>
-                    <div class="info">
-                        <div><i class="fa-solid fa-circle-check"></i> Camos</div>
-                        <div><i class="fa-solid fa-circle-check"></i> Weapon XP</div>
-                        <div><i class="fa-solid fa-circle-check"></i> Levels</div>
-                        <div><i class="fa-solid fa-circle-check"></i> Calling Cards / Emblems</div>
-                    </div>
-                    <button onclick="window.open('https://discord.gg/teentitans', '_blank')">
-                        Purchase
-                    </button>
-                </div>
-                <div class="card">
-                    <div class="tag">Basic</div>
-                    <h3 class="price">$5 <span class="price2">One Time</span></h3>
-                    <p>1 Hardcore Domination Bot Lobby</p>
-                    <div class="divider"></div>
-                    <div class="info">
-                        <div><i class="fa-solid fa-circle-check"></i> Camos</div>
-                        <div><i class="fa-solid fa-circle-check"></i> Weapon XP</div>
-                        <div><i class="fa-solid fa-circle-check"></i> Levels</div>
-                        <div><i class="fa-solid fa-circle-check"></i> Calling Cards / Emblems</div>
-                    </div>
-                    <button onclick="window.open('https://discord.gg/teentitans', '_blank')">
-                        Purchase
-                    </button>
-                </div>
-                <div class="card">
-                    <div class="tag">Ultra</div>
-                    <h3 class="price">$3 <span class="price2">Each for 5+ Lobbies</span></h3>
-                    <p>5+ Hardcore Domination Bot Lobbies</p>
-                    <div class="divider"></div>
-                    <div class="info">
-                        <div><i class="fa-solid fa-circle-check"></i> Camos</div>
-                        <div><i class="fa-solid fa-circle-check"></i> Weapon XP</div>
-                        <div><i class="fa-solid fa-circle-check"></i> Levels</div>
-                        <div><i class="fa-solid fa-circle-check"></i> Calling Cards / Emblems</div>
-                    </div>
-                    <button onclick="window.open('https://discord.gg/teentitans', '_blank')">
-                        Purchase
-                    </button>
-                </div>
-                <div class="card">
-                    <div class="tag">VIP</div>
-                    <h3 class="price">$250 <span class="price2">One Time</span></h3>
-                    <p>Unlimited Bot Lobbies</p>
-                    <div class="divider"></div>
-                    <div class="info">
-                        <div><i class="fa-solid fa-circle-check"></i> Camos</div>
-                        <div><i class="fa-solid fa-circle-check"></i> Weapon XP</div>
-                        <div><i class="fa-solid fa-circle-check"></i> Levels</div>
-                        <div><i class="fa-solid fa-circle-check"></i> Calling Cards / Emblems</div>
-                    </div>
-                    <button onclick="window.open('https://discord.gg/teentitans', '_blank')">
-                        Purchase
-                    </button>
-                </div>
-            </div>
-        </div>
+                <div v-for="item in category.items" :key="item.description" class="card">
+                    <div class="tag">{{ item.tag }}</div>
 
-        <div class="item">
-            <h1>Dark Matter & Prestige Master</h1>
-            <div class="divider"></div>
-            <div class="cards">
-                <div class="card">
-                    <div class="tag">VIP</div>
-                    <h3 class="price">$150 <span class="price2">One Time</span></h3>
-                    <p>Unlock Dark Matter</p>
-                    <div class="divider"></div>
-                    <div class="info">
-                        <div><i class="fa-solid fa-circle-check"></i> Dark Matter on every gun</div>
-                        <div><i class="fa-solid fa-circle-check"></i> Quick Delivery Time</div>
-                        <div><i class="fa-solid fa-circle-check"></i> Fast Responses & Updates</div>
-                        <div><i class="fa-solid fa-circle-check"></i> VIP Role in our discord</div>
+                    <div v-if="item.sale" class="price-container">
+                        <span class="price">{{ formatPrice(item.sale) }}</span>
+                        <span class="original-price">{{ formatPrice(getDiscountedPrice(item)) }}</span>
+                        <span class="price2">{{ item.priceDetail }}</span>
                     </div>
-                    <button onclick="window.open('https://discord.gg/teentitans', '_blank')">
-                        Purchase
-                    </button>
-                </div>
-                <div class="card">
-                    <div class="tag">VIP</div>
-                    <h3 class="price">$150+ <span class="price2">One Time</span></h3>
-                    <p>Hit Prestige Master</p>
-                    <div class="divider"></div>
-                    <div class="info">
-                        <div><i class="fa-solid fa-circle-check"></i> Dark Matter on every gun</div>
-                        <div><i class="fa-solid fa-circle-check"></i> Quick Delivery Time</div>
-                        <div><i class="fa-solid fa-circle-check"></i> Fast Responses & Updates</div>
-                        <div><i class="fa-solid fa-circle-check"></i> VIP Role in our discord</div>
+                    <div v-else class="price-container">
+                        <span v-if="item.sale" class="original-price">{{ formatPrice(item.price) }}</span>
+                        <span class="price">{{ formatPrice(getDiscountedPrice(item)) }}</span>
+                        <span class="price2">{{ item.priceDetail }}</span>
                     </div>
-                    <button onclick="window.open('https://discord.gg/teentitans', '_blank')">
-                        Purchase
-                    </button>
-                </div>
-                <div class="card">
-                    <div class="tag">VIP</div>
-                    <h3 class="price">$300+ <span class="price2">One Time</span></h3>
-                    <p>Hit Prestige Master & Unlock Dark Matter</p>
-                    <div class="divider"></div>
-                    <div class="info">
-                        <div><i class="fa-solid fa-circle-check"></i> Dark Matter on every gun</div>
-                        <div><i class="fa-solid fa-circle-check"></i> Quick Delivery Time</div>
-                        <div><i class="fa-solid fa-circle-check"></i> Fast Responses & Updates</div>
-                        <div><i class="fa-solid fa-circle-check"></i> VIP Role in our discord</div>
-                    </div>
-                    <button onclick="window.open('https://discord.gg/teentitans', '_blank')">
-                        Purchase
-                    </button>
-                </div>
-            </div>
-        </div>
 
-        <div class="item">
-            <h1>In-game Bundles & 2XP Codes</h1>
-            <div class="divider"></div>
-            <div class="cards">
-                <div class="card">
-                    <div class="tag">Basic</div>
-                    <h3 class="price">$5 <span class="price2">One Time</span></h3>
-                    <p>Little Caesars: 5 Codes (1 code per day)</p>
+                    <p>{{ item.description }}</p>
                     <div class="divider"></div>
                     <div class="info">
-                        <div>
-                            <i class="fa-solid fa-circle-check"></i> Unlock exclusive rewards in
-                            game
-                        </div>
-                        <div><i class="fa-solid fa-circle-check"></i> Quick Delivery Time</div>
-                        <div><i class="fa-solid fa-circle-check"></i> Fast Responses & Updates</div>
-                        <div>
-                            <i class="fa-solid fa-circle-check"></i> Customer role in our discord
+                        <div v-for="feature in item.features" :key="feature">
+                            <i class="fa-solid fa-circle-check"></i> {{ feature }}
                         </div>
                     </div>
-                    <button onclick="window.open('https://discord.gg/teentitans', '_blank')">
-                        Purchase
-                    </button>
-                </div>
-                <div class="card">
-                    <div class="tag">Basic</div>
-                    <h3 class="price">$25 <span class="price2">One Time</span></h3>
-                    <p>Monster Energy Bundle</p>
-                    <div class="divider"></div>
-                    <div class="info">
-                        <div>
-                            <i class="fa-solid fa-circle-check"></i> Unlock exclusive rewards in
-                            game
-                        </div>
-                        <div><i class="fa-solid fa-circle-check"></i> Quick Delivery Time</div>
-                        <div><i class="fa-solid fa-circle-check"></i> Fast Responses & Updates</div>
-                        <div>
-                            <i class="fa-solid fa-circle-check"></i> Customer role in our discord
-                        </div>
-                    </div>
-                    <button onclick="window.open('https://discord.gg/teentitans', '_blank')">
-                        Purchase
-                    </button>
-                </div>
-                <div class="card">
-                    <div class="tag">Basic</div>
-                    <h3 class="price">$15 <span class="price2">One Time</span></h3>
-                    <p>Tokyo Game Show 2024 Bundle</p>
-                    <div class="divider"></div>
-                    <div class="info">
-                        <div>
-                            <i class="fa-solid fa-circle-check"></i> Unlock exclusive rewards in
-                            game
-                        </div>
-                        <div><i class="fa-solid fa-circle-check"></i> Quick Delivery Time</div>
-                        <div><i class="fa-solid fa-circle-check"></i> Fast Responses & Updates</div>
-                        <div>
-                            <i class="fa-solid fa-circle-check"></i> Customer role in our discord
-                        </div>
-                    </div>
-                    <button onclick="window.open('https://discord.gg/teentitans', '_blank')">
-                        Purchase
-                    </button>
-                </div>
-                <div class="card">
-                    <div class="tag">Basic</div>
-                    <h3 class="price">$6 <span class="price2">One Time</span></h3>
-                    <p>2XP Codes 10 HOURS </p>
-                    <div class="divider"></div>
-                    <div class="info">
-                        <div>
-                            <i class="fa-solid fa-circle-check"></i> Unlock 10 HOURS OF DOUBLE XP
-                        </div>
-                        <div><i class="fa-solid fa-circle-check"></i> Quick Delivery Time</div>
-                        <div><i class="fa-solid fa-circle-check"></i> Fast Responses & Updates</div>
-                        <div>
-                            <i class="fa-solid fa-circle-check"></i> Customer role in our discord
-                        </div>
-                    </div>
-                    <button onclick="window.open('https://discord.gg/teentitans', '_blank')">
-                        Purchase
-                    </button>
+                    <button @click="window.open(item.link, '_blank')">Purchase</button>
                 </div>
             </div>
         </div>
@@ -345,6 +335,23 @@ h1 {
     color: rgb(143, 156, 194);
     border-radius: 25px;
     padding: 2px 15px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-right: 10px;
+    position: relative;
+}
+
+.card .price-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
 }
 
 .card .price {
